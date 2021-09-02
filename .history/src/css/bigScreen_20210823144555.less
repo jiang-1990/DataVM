@@ -1,0 +1,93 @@
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.top{
+    height: 1.25rem;
+    background: url(../assets/head_bg.png) no-repeat;
+    box-sizing: 100% 100%;
+    position: relative;
+    h1{
+        font-size: .45rem;
+        line-height: 1rem;
+        color: #ffffff;
+        text-align:center;
+    }
+    .time{
+        line-height: .9375rem;
+        position: absolute;
+        right: .375rem;
+        top: 0;
+        color: cornflowerblue;
+    }
+}
+.mainBox{
+    min-width: 1024px;
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    padding: .125rem .125rem 0;
+    .culonm{
+        flex: 3;
+    }
+    .culonm:nth-child(2){
+        flex: 5;
+    }
+    .panl{
+        position: relative;
+        height: 3.875rem;
+        border: .0125rem solid rgba(25,186,139,0.17) ;
+        background: url(../assets/line.png) rgba(255,255,255,0.03);
+        padding: 0 .1875rem .5rem;
+        margin-bottom: .1875rem;
+        &::before{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 10px;
+            height: 10px;
+            border-left: 1px solid #02a6b5;
+            border-top: 1px solid #02a6b5;
+            content: "";
+        }
+        &::after{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 10px;
+            height: 10px;
+            border-right: 1px solid #02a6b5;
+            border-top: 1px solid #02a6b5;
+            content: "";
+        }
+        .zhuanjiao{
+            width: 100px;
+            height: 10px;
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            &::before{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 10px;
+                height: 10px;
+                border-left: 1px solid #02a6b5;
+                border-bottom: 1px solid #02a6b5;
+                content: "";
+            }
+            &::after{
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 10px;
+                height: 10px;
+                border-right: 1px solid #02a6b5;
+                border-bottom: 1px solid #02a6b5;
+                content: "";
+            }
+        }
+    }
+}
+
